@@ -63,3 +63,7 @@ java -jar target/proyectORM-1.0.jar
 
 ## Nota sobre iconos
 Los iconos ahora se cargan desde `src/main/resources/aed/ui/img/` (funciona al clonar y también dentro del JAR).
+
+## ScreenShots
+<img src="src/ScreenShot/proyectORM001.png" width="320" alt="Captura de la app"> <img src="src/ScreenShot/proyectORM002.png" width="450" alt="Captura de la app">
+<img src="src/ScreenShot/proyectORM003.png" width="450" alt="Captura de la app"> <img src="src/ScreenShot/proyectORM004.png" width="450" alt="Captura de la app">
