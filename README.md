@@ -1,5 +1,8 @@
 # ProjectORM
 
+![GitHub repo size](https://img.shields.io/github/repo-size/dfleper/ProjectORM?logo=github)
+![GitHub last commit](https://img.shields.io/github/last-commit/dfleper/ProjectORM?color=blue&label=last-commit&logo=github&logoColor=white)
+
 Aplicación Java (Maven) con Hibernate/JPA para gestionar un pequeño dominio de “concesionario” (Clientes, Coches y Revisiones) usando MySQL.  
 Pensado para ejecutarse en **VS Code**.
 
