@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2"
+             xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+
+  <persistence-unit name="concesionarioUP" transaction-type="RESOURCE_LOCAL">
+    <!-- Provider compatible con Hibernate 5.x -->
+    <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+    <class>aed.map.Coche</class>
+    <class>aed.map.Revision</class>
+    <class>aed.map.Cliente</class>
+
+    <properties>
+      <!-- Ajusta estos datos a tu MySQL local -->
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/concesionario?serverTimezone=UTC"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.password" value="1234"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+
+      <!-- Hibernate -->
+      <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
+      <property name="hibernate.show_sql" value="true"/>
+      <property name="hibernate.format_sql" value="true"/>
+      <property name="hibernate.hbm2ddl.auto" value="update"/>
+
+      <!-- Desactivar cachés antiguas -->
+      <property name="hibernate.cache.use_second_level_cache" value="false"/>
+      <property name="hibernate.cache.use_query_cache" value="false"/>
+    </properties>
+  </persistence-unit>
+
+</persistence>
